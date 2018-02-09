@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<SoundDef>
+		<defName>ShotAWP</defName>  
+		<context>MapOnly</context>
+		<eventNames />  
+		<maxSimultaneous>3</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>gun/ShotAWP</clipFolderPath>
+					</li>
+				</grains> 
+				<volumeRange>
+					<min>26</min>        
+					<max>26</max>
+				</volumeRange>				
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+   </SoundDef>
+ </Defs>

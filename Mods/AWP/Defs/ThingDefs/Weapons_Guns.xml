@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ============================================== -->
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_BoltActionRifle2</defName>
+    <label>AWP bullet</label>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>1000</damageAmountBase>
+      <speed>85</speed>
+    </projectile>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+  </ThingDef>
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Gun_BoltActionRifle2</defName>
+    <label>AWP</label>
+    <description>A bolt-action rifle from modern world. Bravo range and power, but low rate of fire.</description>
+    <graphicData>
+      <texPath>Things/AWP/AWP</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+		<generateCommonality>1.5</generateCommonality>
+    <statBases>
+      <WorkToMake>25000</WorkToMake>
+      <Mass>3.5</Mass>
+      <AccuracyTouch>1.00</AccuracyTouch>
+      <AccuracyShort>1.00</AccuracyShort>
+      <AccuracyMedium>0.98</AccuracyMedium>
+      <AccuracyLong>0.95</AccuracyLong>
+      <RangedWeapon_Cooldown>1.26</RangedWeapon_Cooldown>
+      <Weapon_Bulk>1.0</Weapon_Bulk>
+    </statBases>
+    <costList>
+      <Steel>90</Steel>
+      <Component>3</Component>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_BoltActionRifle2</defaultProjectile>
+        <warmupTime>0.8</warmupTime>
+        <range>100</range>
+        <soundCast>ShotAWP</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+
+	<!-- ============================================== -->
+</Defs>
