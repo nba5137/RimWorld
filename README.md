@@ -1,6 +1,6 @@
 # RimWorld
 My custom stuffs(like weapons) for the game RimWorld. (XML) <br>
-Time to bring some modern stuff to this survival game. 
+Time to bring some modern stuffs to this survival game. 
 
 ## Weapon list
 1. **AWP**	- A modern bolt rifle. 
